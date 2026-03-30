@@ -1,0 +1,2 @@
+# hotel
+site vitrine Hotel
