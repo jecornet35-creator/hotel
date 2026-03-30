@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Lato", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+
+  --color-background: hsl(40 33% 96%);
+  --color-foreground: hsl(30 10% 15%);
+
+  --color-card: hsl(40 30% 98%);
+  --color-card-foreground: hsl(30 10% 15%);
+
+  --color-popover: hsl(40 30% 98%);
+  --color-popover-foreground: hsl(30 10% 15%);
+
+  --color-primary: hsl(82 25% 32%);
+  --color-primary-foreground: hsl(40 33% 96%);
+
+  --color-secondary: hsl(33 30% 88%);
+  --color-secondary-foreground: hsl(30 10% 25%);
+
+  --color-muted: hsl(33 20% 92%);
+  --color-muted-foreground: hsl(30 8% 50%);
+
+  --color-accent: hsl(33 40% 85%);
+  --color-accent-foreground: hsl(30 10% 20%);
+
+  --color-destructive: hsl(0 72% 51%);
+  --color-destructive-foreground: hsl(0 0% 100%);
+
+  --color-border: hsl(33 20% 88%);
+  --color-input: hsl(33 20% 88%);
+  --color-ring: hsl(82 25% 32%);
+
+  --radius-lg: 0.5rem;
+  --radius-md: calc(0.5rem - 2px);
+  --radius-sm: calc(0.5rem - 4px);
+
+  --color-hotel-gold: hsl(38 60% 55%);
+  --color-hotel-sand: hsl(33 30% 88%);
+  --color-hotel-olive: hsl(82 25% 32%);
+  --color-hotel-cream: hsl(40 33% 96%);
+  --color-hotel-dark: hsl(30 10% 15%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
